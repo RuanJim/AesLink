@@ -23,6 +23,11 @@ namespace Com.PerkinElmer.Service.AesLink
     /// </summary>
     public sealed class CustomAddIn : AddIn
     {
-        // Override methods in this class to register your extensions.
+        protected override void RegisterDataMethods(DataMethodRegistrar registrar)
+        {
+            base.RegisterDataMethods(registrar);
+
+            registrar.Register(new GenerateLinkMethod());
+        }
     }
 }
