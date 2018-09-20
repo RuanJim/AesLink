@@ -38,7 +38,7 @@ namespace Com.PerkinElmer.Service.AesLink
         /// <summary>A localized description on how to use the method and what the method does,
         /// this is shown to the user in some user interfaces.
         /// </summary>
-        private static readonly string MethodDescription = "Create AES Link method.\n\nAESLink([uid],[uname],[orgid],[orgname],[pname],[pcid],[timestamp],[appointkey])";
+        private static readonly string MethodDescription = "Create AES Link method.\n\nAESLink([uid],[uname],[hosid],[hosname],[pname],[pcid],[timestamp],[appointkey])";
 
         /// <summary>A localized name of the method as shown in some user interfaces.
         /// </summary>
@@ -66,14 +66,14 @@ namespace Com.PerkinElmer.Service.AesLink
         {
             string uid = ((DataValue<string>)arguments[0]).ValidValue;
             string uname = ((DataValue<string>)arguments[1]).ValidValue;
-            string orgid = ((DataValue<string>)arguments[2]).ValidValue;
-            string orgname = ((DataValue<string>)arguments[3]).ValidValue;
+            string hosid = ((DataValue<string>)arguments[2]).ValidValue;
+            string hosname = ((DataValue<string>)arguments[3]).ValidValue;
             string pname = ((DataValue<string>)arguments[4]).ValidValue;
             string pcid = ((DataValue<string>)arguments[5]).ValidValue;
             string timestamp = ((DataValue<string>)arguments[6]).ValidValue;
             string appointkey = ((DataValue<string>)arguments[7]).ValidValue;
 
-            string json = $@"""uid"":""{uid}"",""uname"":""{uname}"",""orgid"":""{orgid}"",""orgname"":""{orgname}"",""pname"":""{pname}"",""pcid"":""{pcid}"",""timestamp"":""{timestamp}"",""appointkey"":""{appointkey}""";
+            string json = $@"""uid"":""{uid}"",""uname"":""{uname}"",""hosid"":""{hosid}"",""hosname"":""{hosname}"",""pname"":""{pname}"",""pcid"":""{pcid}"",""timestamp"":""{timestamp}"",""appointkey"":""{appointkey}""";
 
             json = "{" + json + "}";
 
