@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<PackageDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="1.0" Name="AesLink" Version="1.0.0.0" SeriesId="9BC481E1-A8F9-457E-A229-2E04996FC038" IntendedClient="Core">
+  <File SourceFile="Com.PerkinElmer.Service.AesLink.dll" TargetFilename="Com.PerkinElmer.Service.AesLink.dll" Type="Assembly">
+    <Compatibility Min-version="0.0.0.0" Max-version="#.#.*.*" />
+  </File>
+  <File SourceFile="module.xml" TargetFilename="module.xml" Type="File" />
+</PackageDescription>

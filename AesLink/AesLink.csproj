@@ -94,6 +94,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="AesLink.bat" />
+    <None Include="AesLink.pkdesc" />
     <None Include="SpotfireDeveloper.snk" />
     <Content Include="module.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
