@@ -70,7 +70,7 @@ namespace Com.PerkinElmer.Service.AesLink
             string hosname = ((DataValue<string>)arguments[3]).ValidValue;
             string pname = ((DataValue<string>)arguments[4]).ValidValue;
             string pcid = ((DataValue<string>)arguments[5]).ValidValue;
-            string timestamp = ((DataValue<string>)arguments[6]).ValidValue;
+            string timestamp = ((DataValue<DateTime>)arguments[6]).ValidValue.ToString("yyyyMMddHHmmss");
             string appointkey = ((DataValue<string>)arguments[7]).ValidValue;
 
             string json = $@"""uid"":""{uid}"",""uname"":""{uname}"",""hosid"":""{hosid}"",""hosname"":""{hosname}"",""pname"":""{pname}"",""pcid"":""{pcid}"",""timestamp"":""{timestamp}"",""appointkey"":""{appointkey}""";
@@ -88,7 +88,7 @@ namespace Com.PerkinElmer.Service.AesLink
             argumentTypes.Add(DataType.String);
             argumentTypes.Add(DataType.String);
             argumentTypes.Add(DataType.String);
-            argumentTypes.Add(DataType.String);
+            argumentTypes.Add(DataType.DateTime);
             argumentTypes.Add(DataType.String);
         }
 
