@@ -38,7 +38,7 @@ namespace Com.PerkinElmer.Service.AesLink
         /// <summary>A localized description on how to use the method and what the method does,
         /// this is shown to the user in some user interfaces.
         /// </summary>
-        private static readonly string MethodDescription = "Create AES Link method.";
+        private static readonly string MethodDescription = "Create AES Link method.\n\nAESLink([uid],[uname],[orgid],[orgname],[pname],[pcid],[timestamp],[appointkey])";
 
         /// <summary>A localized name of the method as shown in some user interfaces.
         /// </summary>
